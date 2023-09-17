@@ -1,0 +1,19 @@
+
+# Direct log messages to a log file
+log4j.rootLogger=ERROR, file
+log4j.appender.file=org.apache.log4j.RollingFileAppender
+log4j.appender.file.File= ${user.home}\\AppData\\Roaming\\ringID\\log.out
+log4j.appender.file.MaxFileSize=1MB
+log4j.appender.file.MaxBackupIndex=5
+log4j.appender.file.layout=org.apache.log4j.PatternLayout
+log4j.appender.file.layout.ConversionPattern=%d{yyyy-MM-dd HH:mm:ss} %-5p %c{1}:%L - %m%n
+
+
+# Direct log messages to system
+log4j.rootLogger=ERROR, STDOUT
+log4j.appender.STDOUT=org.apache.log4j.ConsoleAppender
+log4j.appender.STDOUT.Target=System.out
+log4j.appender.STDOUT.layout=com.ipvision.view.utility.ANSIColorLayout
+log4j.appender.STDOUT.layout.ConversionPattern=[%d{yyyy-MM-dd:HH:mm:ss}][%-5p][%c:%L]  %m%n
+log4j.appender.STDOUT.layout.ConversionPattern=%m%n
+#log4j.rootLogger=OFF

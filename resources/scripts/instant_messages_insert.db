@@ -1,0 +1,7 @@
+INSERT INTO RING_INSTANT_MESSAGES VALUES 
+('I''m busy.I''ll Call you later.',0), 
+('I''m in another phone call. I''ll Call you later.',0),
+('I''m in a meeting. I''ll Call you later.',0),
+('I''m driving. I''ll Call you later.',0),
+('I can''t talk now. Please send me a message.',0),
+('I am eating. I''ll Call you later.',0)
